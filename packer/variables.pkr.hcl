@@ -9,6 +9,6 @@ variable "ami" {
   type = string
 }
 locals {
-  image-timestamp = "${formatdata("DD-MM-YYYY-hh-mm", timestamp())}"
+  image-timestamp = "${formatdate("DD-MM-YYYY-hh-mm", timestamp())}"
   image-name = "${var.project_name}-${var.project_env}-${local.image-timestamp}"
 }

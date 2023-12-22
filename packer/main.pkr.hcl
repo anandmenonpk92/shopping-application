@@ -13,7 +13,7 @@ source "amazon-ebs" "image" {
 
 build {
 
-  sources = [ "source.amazon-ebs,image"]
+  sources = [ "source.amazon-ebs,image" ]
 
   provisioner "file" {
     source = "../website"
