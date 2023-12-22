@@ -22,7 +22,7 @@ jobs:
            version: ${{ env.packer_version }}
 
        - name: "Packer Init"
-         run: Packer init .
+         run: packer init .
          working-directory: ./packer/
 
        - name: "Packer Validate"
